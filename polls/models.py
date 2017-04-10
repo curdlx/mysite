@@ -7,6 +7,7 @@ from django.utils import timezone
 # Create your models here.
 @python_2_unicode_compatible
 class Question(models.Model):
+    id = models.IntegerField(primary_key=True)
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
